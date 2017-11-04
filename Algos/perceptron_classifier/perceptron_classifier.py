@@ -3,7 +3,7 @@ import tensorflow as tf
 from sklearn.model_selection import StratifiedKFold
 
 # Load Iris data
-data = pd.read_csv('iris.csv')
+data = pd.read_csv('Algos/perceptron_classifier/iris.csv')
 X_data = data.values[:,:-1]
 y_data = pd.get_dummies(data['class'].values).values    #One-hot encoding
 
